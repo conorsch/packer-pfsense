@@ -26,10 +26,6 @@
 	  "<wait>y<wait><enter><wait5>",
 	  "<wait>pkg install -y sudo<wait><enter><wait5>",
 	  "<wait>pkg install -y bash<wait><enter><wait5>",
-	  "<wait>pkg install -y ruby<enter><wait10><wait10><wait10>",
-	  "<wait>pkg install -y rubygem-chef-server<wait><enter>",
-	  "<wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10>",
-	  "<wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10>",
 	  "<wait>pkg install -y virtualbox-ose-additions<wait><enter>",
 	  "<wait10><wait10><wait10><wait10><wait10><wait10><wait10>",
           "<wait>rehash<enter>",
@@ -145,7 +141,6 @@
       "pause_before": "5s",
       "scripts": [
         "scripts/config.sh",
-        "scripts/chef.sh",
         "scripts/vmtools.sh",
         "scripts/vagrant.sh"
       ]
