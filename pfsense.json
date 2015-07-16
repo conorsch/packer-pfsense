@@ -22,6 +22,8 @@
           "14<enter>",
           "<wait>y<enter>",
           "<wait>8<enter>",
+	  "<wait>pkg upgrade<wait><enter>",
+	  "<wait>y<wait><enter><wait5>",
 	  "<wait>pkg_add -r sudo<wait><enter><wait5>",
 	   "<wait>pkg_add -r bash<wait><enter><wait5>",
 	  "<wait>pkg_add -r ruby<enter><wait10><wait10><wait10>",
