@@ -38,7 +38,11 @@
           "<wait>pw group mod wheel -m vagrant<enter>",
           "<wait>echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /usr/local/etc/sudoers<enter>",
           "<wait>chmod 0440 /usr/local/etc/sudoers<wait><enter>",
-          "<wait5>reboot<enter>"
+          "<wait5>reboot<enter>",
+          "<wait10><wait10><wait10>",
+          "<wait10><wait10><wait10>",
+          "<wait>8<enter>",
+          "<wait>pfctl -d<enter>"
         ],
       "disk_size": 8192,
       "guest_additions_mode": "disable",

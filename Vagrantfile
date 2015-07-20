@@ -5,15 +5,15 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "cmad/pfsense"
+  config.vm.box = "pfsense"
+  config.ssh.insert_key = false
   config.vm.synced_folder '.', '/vagrant', disabled: true
   config.vm.network "private_network", ip: "10.0.1.10", auto_config: false, virtualbox__intnet: true
   config.vm.guest = :freebsd
-
   config.vm.provider "virtualbox" do |vb|
-    vb.gui = true   
+    vb.gui = true
   end
-  
+
   config.vm.provider "vmware_workstation" do |vmware|
     vmware.gui = true
   end
