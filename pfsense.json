@@ -41,8 +41,9 @@
           "<wait5>reboot<enter>",
           "<wait10><wait10><wait10>",
           "<wait10><wait10><wait10>",
-          "<wait>8<enter>",
-          "<wait>pfctl -d<enter>"
+          "<wait>8<enter><wait>",
+          "easyrule pass wan tcp 10.0.2.2 10.0.2.15 22<enter>",
+          "<wait10><wait10><wait10>"
         ],
       "disk_size": 8192,
       "guest_additions_mode": "disable",
