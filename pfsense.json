@@ -77,62 +77,7 @@
       ],
       "virtualbox_version_file": ".vbox_version",
       "vm_name": "pfSense"
-    },
-    {
-      "type": "vmware-iso",
-        "http_directory": "http",
-        "http_port_min": "8100",
-        "boot_wait": "10s",
-        "boot_command": [
-          "<wait>1",
-          "<wait10><wait10><wait10>I",
-          "<wait10><wait10><tab><tab><tab><wait><enter>",
-          "<wait><enter>",
-          "<wait5><enter>",
-          "<wait10><wait5><enter>",
-          "<wait5><wait><enter>",
-          "<wait10><wait10><wait10><wait10><wait10><wait10><wait10>",
-          "<wait>n<enter><wait>",
-          "<wait>em0<enter><wait>",
-          "<wait><enter><wait>",
-          "<wait>y<enter>",
-          "<wait10><wait5>",
-          "14<enter>",
-          "<wait>y<enter>",
-          "<wait>8<enter>",
-          "<wait>pkg install -y sudo<wait><enter><wait5>",
-          "<wait>pkg install -y bash<wait><enter><wait5>",
-          "<wait>rehash<enter>",
-          "<wait>pw usermod root -h 0<wait><enter>",
-	  "<wait>vagrant<enter>", 
-          "<wait>pw adduser vagrant -m -s /usr/local/bin/bash<enter>",
-          "<wait>pw usermod vagrant -h 0<enter>",
-          "<wait>vagrant<enter>",
-          "<wait>pw group mod wheel -m vagrant<enter>",
-          "<wait>echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /usr/local/etc/sudoers<enter>",
-          "<wait>chmod 0440 /usr/local/etc/sudoers<wait><enter>",
-          "<wait5>reboot<enter>"
-        ],
-      "disk_size": 8192,
-      "guest_os_type": "freeBSD",
-      "iso_checksum": "bc2b498f82fd94e1637ceb4900ca44c6f66f082a6f452b5dec864a8064cacb2a",
-      "iso_checksum_type": "sha256",
-      "iso_urls": [ "pfSense-LiveCD-2.2.3-RELEASE-i386.iso" ],
-      "shutdown_command": "sudo shutdown -p now",
-      "ssh_port": 22,
-      "tools_upload_flavor": "freebsd",
-      "ssh_password": "vagrant",
-      "ssh_username": "vagrant",
-      "ssh_wait_timeout": "10000s",
-      "vm_name": "pfSense",
-      "vmx_data": {
-        "ethernet0.present": "TRUE",
-        "ethernet1.present": "TRUE",
-        "memsize": "512",
-        "numvcpus": "1"
-      }
-   
-  }
+    }
   ],
    "provisioners": [
     {
