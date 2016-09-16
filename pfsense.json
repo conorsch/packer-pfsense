@@ -42,7 +42,13 @@
           "<wait10>",
           "<wait>8<enter><wait>",
           "easyrule pass wan tcp 10.0.2.2 10.0.2.15 22<enter>",
-          "<wait10><wait10><wait10>"
+          "<wait>exit<enter><wait>",
+          "<wait>1<enter><wait>",
+          "<wait>n<enter><wait>",
+          "<wait>em0<enter><wait>",
+          "<wait><enter><wait>",
+          "<wait>y<enter><wait>",
+          "<wait>y<enter><wait>"
         ],
       "disk_size": 8192,
       "guest_additions_mode": "disable",
