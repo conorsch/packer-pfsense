@@ -96,11 +96,11 @@
       ]
     }
   ],
-  "post-processors": [  
+  "post-processors": [
     {
       "type": "vagrant",
-	"output" : "pfSense_{{.Provider}}_{{isotime}}.box",
-	"keep_input_artifact": true
+      "output" : "pfSense_{{.Provider}}_{{isotime}}.box",
+      "keep_input_artifact": false
     }
   ]
 }
